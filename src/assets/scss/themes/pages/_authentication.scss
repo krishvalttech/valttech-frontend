@@ -22,7 +22,6 @@ $sec-title:#18191C;
   background: #FCEEEE !important;
   color: #E05151 !important;
 }
-
 .auth-wrapper {
   position: relative;
   display: flex;
@@ -175,7 +174,7 @@ $sec-title:#18191C;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  // padding: 20px;
   background-color: #0b3d3a;
 
   // Logo styling
@@ -366,7 +365,7 @@ footer {
   flex-grow: 1;
 }
 /* Optional: Header styles */
-header {
+.header {
  background-image: url('https://i.ibb.co/P4dS8cv/Hero.jpg');
  background-repeat: no-repeat;
  background-size: cover;

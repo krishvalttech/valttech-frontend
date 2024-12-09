@@ -1,39 +1,11 @@
-// import React from 'react';
-// // import './Header.css';
 
-// const Header = () => {
-//   return (
-//     <header>
-//       <div className="top-bar">
-//         <p>Explore 5000+ new Jobs*</p>
-//       </div>
-//       <nav className="navbar">
-//         <div className="logo">
-//           <h1>Job Portal</h1>
-//         </div>
-//         <ul className="nav-links">
-//           <li><a href="#jobs">Jobs</a></li>
-//           <li><a href="#companies">Companies</a></li>
-//           <li><a href="#blog">Blog</a></li>
-//           <li><a href="#contact">Contact Us</a></li>
-//         </ul>
-//         <div className="auth-buttons">
-//           <button className="sign-in">Sign In</button>
-//           <button className="sign-up">Sign Up</button>
-//         </div>
-//       </nav>
-//     </header>
-//   );
-// };
-
-// export default Header;
 
 import React from 'react';
 import { Navbar, Nav, Button, Form, FormControl, Container, Row, Col } from 'react-bootstrap';
-
+import { Link } from 'react-router-dom';
 const Header = () => {
   return (
-    <header className='py-0'>
+    <header className='py-0 header'>
       {/* Top Banner */}
       <div className="bg-color text-white text-center py-2">
         <span>"Explore 5000+ new Jobs"</span>
@@ -58,8 +30,13 @@ const Header = () => {
               <Nav.Link href="#blogs" className='text-white mx-3'>Blogs</Nav.Link>
               <Nav.Link href="#contact" className='text-white mx-3'>Contact Us</Nav.Link>
               <Nav.Link href="#contact" className='text-white mx-3'><i class='bx bxs-bell text-white' ></i></Nav.Link>
-              <Nav.Link href="#signin" className='text-white mx-3'>Sign In</Nav.Link>
+              <Link to="/auth/signin-1">
+              <Button className="ms-2 text-white bg-suc">Sign In</Button>
+              </Link>
+              
+              <Link to="/auth/signup-1">
               <Button className="ms-2 text-white bg-suc">Sign Up</Button>
+              </Link>
             </Nav>
           </Navbar.Collapse>
        
